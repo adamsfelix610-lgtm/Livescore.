@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiveScores Hub</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#0d1117; color:white; }
+    header { background:#161b22; padding:1rem; text-align:center; }
+    h1 { margin:0; font-size:1.8rem; }
+    nav { display:flex; flex-wrap:wrap; justify-content:center; background:#21262d; padding:0.5rem; }
+    nav a { color:white; text-decoration:none; margin:0.5rem 1rem; font-weight:bold; }
+    nav a:hover { color:#1f6feb; }
+    section { padding:1rem; }
+    iframe { width:100%; border:none; min-height:500px; background:white; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:1rem; }
+    footer { background:#161b22; text-align:center; padding:1rem; margin-top:1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>⚽ LiveScores Hub</h1>
+    <p>All Leagues • Live Matches • News • Highlights</p>
+  </header>
+
+  <nav>
+    <a href="#live">Live Matches</a>
+    <a href="#football">Football</a>
+    <a href="#basketball">Basketball</a>
+    <a href="#tennis">Tennis</a>
+    <a href="#cricket">Cricket</a>
+    <a href="#news">Sports News</a>
+    <a href="#highlights">Highlights</a>
+  </nav>
+
+  <section id="live">
+    <h2>🔥 Live Matches Now</h2>
+    <iframe src="https://www.sofascore.com/embed/livescore"></iframe>
+  </section>
+
+  <section id="football">
+    <h2>⚽ Football (All Leagues & Competitions)</h2>
+    <iframe src="https://www.sofascore.com/embed/tournament/17"></iframe>
+    <p style="text-align:center;">Select competitions from the widget: Champions League, Europa League, Bundesliga, Premier League, La Liga, Serie A, Ligue 1 and many more.</p>
+  </section>
+
+  <section id="basketball">
+    <h2>🏀 Basketball</h2>
+    <iframe src="https://www.sofascore.com/embed/basketball"></iframe>
+  </section>
+
+  <section id="tennis">
+    <h2>🎾 Tennis</h2>
+    <iframe src="https://www.sofascore.com/embed/tennis"></iframe>
+  </section>
+
+  <section id="cricket">
+    <h2>🏏 Cricket</h2>
+    <iframe src="https://www.espncricinfo.com/ci/engine/match/index.html" height="600"></iframe>
+  </section>
+
+  <section id="news">
+    <h2>📰 Latest Sports News</h2>
+    <iframe src="https://www.espn.com/espn/rss/news" height="600"></iframe>
+  </section>
+
+  <section id="highlights">
+    <h2>🎥 Match Highlights</h2>
+    <iframe src="https://www.scorebat.com/embed/" allowfullscreen frameborder="0" height="600"></iframe>
+    <p style="text-align:center;">Powered by ScoreBat: Highlights from Champions League, Europa League, Bundesliga, EPL, La Liga, Serie A & more.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 LiveScores Hub • Auto-updated via SofaScore, ESPN, ScoreBat</p>
+  </footer>
+</body>
+</html>
